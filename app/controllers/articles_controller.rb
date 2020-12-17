@@ -27,13 +27,13 @@ class ArticlesController < ApplicationController
         redirect_to article_path
       end
 
-      # def edit
-      #   @article = Article.find(params[:id])
-      #   @article.update(article_params)
+      def edit
+      article = Article.find(params[:id])
+      @article.update(article_params)
 
-      #   redirect_to article_path
+      redirect_to article_path
 
-      # end
+      end
       
       def update
         @article = Article.find(params[:id])
