@@ -29,10 +29,6 @@ class ArticlesController < ApplicationController
 
       def edit
       article = Article.find(params[:id])
-      @article.update(article_params)
-
-      redirect_to article_path
-
       end
       
       def update
